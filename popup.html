@@ -3,55 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="popup.css">
-    <link rel="stylesheet" href="to-do.css">
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="to-do.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Pomodoro Timer</title>
   </head>
   <body>
-
     <div class="extension-layout">
+      <!-- Extension Title and Logo -->
+      <div class="header">
+        <div class="logo">
+          <img src="./resources/tomato2.png" alt="PomoPal" />
+        </div>
+        <div class="main-title"><h1>PomoPal</h1></div>
+      </div>
 
-        <!-- Extension Title and Logo -->
-        <div class="header">
-            <div class="logo"><img src="./resources/logo2.png" alt="PomoPal"></div>
-            <div class="main-title"><h1>PomoPal</h1></div>
+      <!-- Timer Area -->
+      <div class="timer-container">
+        <div class="timer-title"><h2>Timer</h2></div>
+        <div class="timer-clock">
+          <h2 id="time">00:00</h2>
         </div>
-        
-        <!-- Timer Area -->
-        <div class="timer-container">
-            <div class="timer-title"><h2>Timer</h2></div>
-            <div class="timer-clock">
-                <h2 id="time">00:00</h2>
-            </div>
-            <div class="timer-buttons">
-                <button id="start-timer-btn">Start Timer</button>
-                <button id="reset-timer-btn">Reset Timer</button>
-            </div>
+        <div class="timer-buttons">
+          <button id="start-timer-btn">Start Timer</button>
+          <button id="reset-timer-btn">Reset Timer</button>
         </div>
-        
-        <!-- To Do List Area  -->
-        <div class="task-list-container">   
-            <div class="task-title"><h2>To-Do List</h2></div>
-            <div class="to-do-container">
-                <div class="inputvalue-container">
-                    <input
-                    class="inputvalue"
-                    type="text"
-                    placeholder="Add your task"
-                    value=""
-                    />
-                    <button class="add-task-button">Add Task</button>
-                </div>
-                
-                <div class="to-do-items"></div>
-                <div class="clear-task-container">
-                    <button id="clear-task">Clear all Task</button>
-                </div>
-            </div>
-        </div>
+      </div>
 
+      <!-- To Do List Area  -->
+      <div class="task-list-container">
+        <div class="task-title"><h2>To-Do List</h2></div>
+        <div class="to-do-container">
+          <div class="inputvalue-container">
+            <input
+              class="inputvalue"
+              type="text"
+              placeholder="Add your task"
+              value=""
+            />
+            <button class="add-task-button">Add Task</button>
+          </div>
+
+          <div class="to-do-items"></div>
+          <div class="clear-task-container">
+            <button id="clear-task">Clear all Task</button>
+          </div>
+        </div>
+      </div>
     </div>
-        
   </body>
   <script src="popup.js"></script>
   <script src="todo.js"></script>
