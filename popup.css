@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515;
+  width: 400px;
+  height: 450px;
+}
+
+/* Common */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.main-title {
+  color: #a72541;
+}
+
+/* Timer Section */
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-title {
+  color: #b65669;
+  font-size: 1.1rem;
+
+}
+
+.timer-clock {
+  color: #cc9ea5;
+}
+
+.timer-buttons {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-timer-btn,
+#reset-timer-btn {
+  background: #7e1c31;
+  color: #ffffff;
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+  outline-style: none;
+  border: 2px solid #cc9ea5;
+  margin: 5px
+}
+
+

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515;
+  width: 400px;
+  height: 450px;
+}
+
+.task-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-title{
+  color: #b65669;
+  margin: 5px;
+  font-size: 1rem;
+}
+
+.to-do-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoList {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 25px;
+  height: 40px;
+  font-weight: bold;
+  flex-wrap: wrap;
+  width: 325px;
+}
+.deleteTask {
+  cursor: pointer;
+  width: 27px;
+  height: 28px;
+  text-align: center;
+  border-radius: 60%;
+  border: 2px solid #cc9ea5;
+  background: #7e1c31;
+  color: #ffffff;
+  margin-right: 5px;
+  font-weight: 300;
+  font-size: larger;
+  padding-bottom: 3px;
+}
+.pText {
+  background: #ffffff;
+  text-transform: capitalize;
+  margin-left: 15px;
+}
+.inputvalue-container {
+  display: flex;
+  margin: 5px;
+  margin-bottom: 5px;
+  background: #E1E6E1;
+  border-radius: 30px;
+  
+}
+.inputvalue {
+  width: 250px;
+  height: 40px;
+  border-radius: 30px;
+  margin-right: 5px;
+  background: transparent;
+  border: none;
+  padding: 10px;
+}
+.add-task-button {
+  width: 100px;
+  background: #7e1c31;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline-style: none;
+  border-radius: 30px;
+  border: 2px solid #cc9ea5;
+}
+
+.clear-task-container {
+  margin: 10px;
+}
+
+#clear-task {
+  background: #7e1c31;
+  color: #ffffff;
+  width: 250px;
+  height: 35px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+  outline-style: none;
+  border: 2px solid #cc9ea5;
+}

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "PomoPal",
+  "version": "1.0",
+  "description": "PomoPal 🍅: Boost productivity with pomodoro timer, streamline tasks with an integrated to-do list.",
+  "action": {
+    "default_title": "Pomodoro",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "tomato.png"
+  }
+}
