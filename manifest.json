@@ -16,6 +16,6 @@
     "service_worker": "background.js"
   },
   "icons": {
-    "48": "tomato.png"
+    "48": "./resources/tomato.png"
   }
 }
